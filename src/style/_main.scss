@@ -1,0 +1,60 @@
+.link_hover_effect{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 0 10px;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: -10px;
+        height: 3px;
+        width: 0%;
+        background: $c1;
+        transition: .3s;
+    }
+    &:hover{
+        color: $c1;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+.linkDecorationNon{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_eff{
+    position: relative;
+    border: 2px solid transparent;
+    height: 40px;
+    padding: 0 30px;
+    background-color: #ef233c;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    svg{
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        color: #D10024;
+        opacity: 0;
+        display: none;
+    }
+    &:hover{
+        background-color: #FFF;
+        color: #D10024;
+        border-color: #D10024;
+        padding: 0px 30px 0px 50px;
+        svg{
+            display: block;
+        }
+    }
+}

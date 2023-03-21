@@ -1,0 +1,28 @@
+.productPrice{
+    color: $c1;
+    font-size: 25px;
+    font-weight: bold;
+}
+.carousel-item{
+    max-height: 50vh;
+    img{
+        height: 50vh!important;
+        width: auto!important;
+        margin: 0 auto;
+    }
+}
+.carousel-indicators{
+    button{
+        height: 10px!important;
+        width: 10px!important;
+        border-radius: 50%;
+        background-color: $c1!important;
+    }
+}
+.carousel-control-prev{
+    display: none;
+
+}
+.carousel-control-next{
+    display: none;
+}

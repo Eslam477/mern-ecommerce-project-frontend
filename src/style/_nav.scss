@@ -1,0 +1,80 @@
+.upper_navbar{
+    background-color: #1E1F29;
+    color: white;
+    span{
+        padding-left: 15px;
+        svg{
+            color: $c1;
+        }
+    }
+
+}
+.main_navbar {
+    color: white;
+    background-color: $c2 !important;
+    border-bottom: $c1 solid 3px;
+  }
+  
+  .nav_form {
+    margin-left: 10vw;
+    input, select, button{
+        height: 40px;
+    }
+    input{
+        border: none;
+        width: 20vw;
+        color: black;
+        padding: 5px;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+    select{
+        width: 12.5vw;
+        border: none;
+        border-right: 1px solid black;
+        border-radius: 20px 0 0 20px;
+        padding-left: 10px;
+        &:focus{
+            outline: none;
+            border: none;
+        border-right: 1px solid black;
+
+        }
+    }
+    button{
+        width: 7vw;
+        border: none;
+        border-left: 1px solid black;
+        border-radius: 0 20px 20px 0;
+        padding-right: 10px;
+        background-color: $c1;
+        font-weight: bold;
+        color: white;
+    }
+  }
+
+  .logo {
+    font-size: 35px;
+    span{
+        color: $c1;
+    }
+  }
+.status{
+    text-align: center;
+    svg{
+        font-size: 20px;
+    }
+}
+
+.nav_links{
+    border-bottom: rgba($c2, $alpha: 0.3) solid 2px;
+    ul{
+        list-style: none;
+        margin: 0;
+        li{
+            padding: .5rem;
+        }
+    }
+}

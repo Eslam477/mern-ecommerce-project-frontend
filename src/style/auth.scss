@@ -1,0 +1,47 @@
+@import "props";
+.auth_container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .auth_form {
+        h4 {
+            color: white;
+            text-align: center;
+        }
+        background: rgba(255, 255, 255, 0.05);
+        padding: 50px;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        input {
+            background: none;
+            border: none;
+            text-align: center;
+            margin: 5px 0;
+            color: white;
+        }
+        button {
+            color: white;
+            transition: 0.2s;
+            &:hover {
+                color: $c1;
+            }
+        }
+        p {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+            font-weight: 100;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: 0.2s;
+                &:hover {
+                    color: $c1;
+                }
+            }
+        }
+    }
+}

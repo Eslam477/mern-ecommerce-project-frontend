@@ -1,0 +1,170 @@
+.link_hover_effect {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 0 10px;
+}
+.link_hover_effect::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  height: 3px;
+  width: 0%;
+  background: #D10024;
+  transition: 0.3s;
+}
+.link_hover_effect:hover {
+  color: #D10024;
+}
+.link_hover_effect:hover::after {
+  width: 100%;
+}
+
+.linkDecorationNon {
+  text-decoration: none;
+  color: white;
+}
+
+.btn_eff {
+  position: relative;
+  border: 2px solid transparent;
+  height: 40px;
+  padding: 0 30px;
+  background-color: #ef233c;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 40px;
+  transition: 0.2s all;
+}
+.btn_eff svg {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  color: #D10024;
+  opacity: 0;
+  display: none;
+}
+.btn_eff:hover {
+  background-color: #FFF;
+  color: #D10024;
+  border-color: #D10024;
+  padding: 0px 30px 0px 50px;
+}
+.btn_eff:hover svg {
+  display: block;
+}
+
+.upper_navbar {
+  background-color: #1E1F29;
+  color: white;
+}
+.upper_navbar span {
+  padding-left: 15px;
+}
+.upper_navbar span svg {
+  color: #D10024;
+}
+
+.main_navbar {
+  color: white;
+  background-color: #15161D !important;
+  border-bottom: #D10024 solid 3px;
+}
+
+.nav_form {
+  margin-left: 10vw;
+}
+.nav_form input, .nav_form select, .nav_form button {
+  height: 40px;
+}
+.nav_form input {
+  border: none;
+  width: 20vw;
+  color: black;
+  padding: 5px;
+}
+.nav_form input:focus {
+  outline: none;
+  border: none;
+}
+.nav_form select {
+  width: 12.5vw;
+  border: none;
+  border-right: 1px solid black;
+  border-radius: 20px 0 0 20px;
+  padding-left: 10px;
+}
+.nav_form select:focus {
+  outline: none;
+  border: none;
+  border-right: 1px solid black;
+}
+.nav_form button {
+  width: 7vw;
+  border: none;
+  border-left: 1px solid black;
+  border-radius: 0 20px 20px 0;
+  padding-right: 10px;
+  background-color: #D10024;
+  font-weight: bold;
+  color: white;
+}
+
+.logo {
+  font-size: 35px;
+}
+.logo span {
+  color: #D10024;
+}
+
+.status {
+  text-align: center;
+}
+.status svg {
+  font-size: 20px;
+}
+
+.nav_links {
+  border-bottom: rgba(21, 22, 29, 0.3) solid 2px;
+}
+.nav_links ul {
+  list-style: none;
+  margin: 0;
+}
+.nav_links ul li {
+  padding: 0.5rem;
+}
+
+.productPrice {
+  color: #D10024;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.carousel-item {
+  max-height: 50vh;
+}
+.carousel-item img {
+  height: 50vh !important;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+  background-color: #D10024 !important;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
+}/*# sourceMappingURL=app.css.map */

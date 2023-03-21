@@ -1,0 +1,25 @@
+.cart_status {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    .details {
+        width: 100%;
+        text-align: left;
+    }
+}
+.cart_item {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 15px 0;
+    padding-top: 20px;
+    display: flex;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    .details {
+        margin-left: 10px;
+    }
+}

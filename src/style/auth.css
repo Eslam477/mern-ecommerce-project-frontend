@@ -1,0 +1,46 @@
+.auth_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.auth_container .auth_form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.auth_container .auth_form h4 {
+  color: white;
+  text-align: center;
+}
+.auth_container .auth_form input {
+  background: none;
+  border: none;
+  text-align: center;
+  margin: 5px 0;
+  color: white;
+}
+.auth_container .auth_form button {
+  color: white;
+  transition: 0.2s;
+}
+.auth_container .auth_form button:hover {
+  color: #D10024;
+}
+.auth_container .auth_form p {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+.auth_container .auth_form p a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.auth_container .auth_form p a:hover {
+  color: #D10024;
+}/*# sourceMappingURL=auth.css.map */
