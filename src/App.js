@@ -24,7 +24,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/cart" element={<RequireAuth loginPath='/login'><Cart /></RequireAuth>} />
-                    <Route path="/product/:id" element={<Product />} />
+                    <Route path='/product/:id' element={<Product />}></Route>
                     <Route path="/admin" element={<RequireAuth loginPath='/login'><Admin /></RequireAuth>} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/reg" element={<Reg />} />
