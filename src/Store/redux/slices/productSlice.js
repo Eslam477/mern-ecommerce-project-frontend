@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, } from "@reduxjs/toolkit";
 import axios from 'axios'
 import consts from '../../../consts.js'
 
@@ -23,7 +23,6 @@ export const addToCart = createAsyncThunk('product/addToCart', async (args) => {
         productId: args.productId,
         productCount: args.productCount
     }
-    console.log("🚀 ~ file: productSlice.js:19 ~ addToCart ~ reqArg:", reqArg)
     return axios.post(Url, reqArg).then((data) => {
         return data
     })

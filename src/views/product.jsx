@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, redirect } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { getProductData, addToCart } from '../Store/redux/slices/productSlice';
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
@@ -15,7 +15,13 @@ const Product = () => {
     const userId = useSelector((state) => state.userSlice.userData._id)
 
     const addToCartHandler = () => {
-        dispatch(addToCart({ userId, productId: productData.id, productCount: productCount.current.value }))
+        if (userId == null) {
+            alert('login is required')
+            return;
+        } else {
+            dispatch(addToCart({ userId, productId: productData.id, productCount: productCount.current.value }))
+
+        }
     }
 
 
